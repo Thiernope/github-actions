@@ -12,7 +12,7 @@ on:
 jobs:
   build:
 
-    runs-on: selft-hosted
+    runs-on: ubuntu-latest
 
     strategy:
       matrix:
