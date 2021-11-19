@@ -26,12 +26,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm i
     - run: npm build --if-present
-    - name: Run the tests and generate coverage report
-      run: npm test -- --coverage
-    - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v1
-      with:
-       token: ${{ secrets.CODECOV_TOKEN }}
+      run: npm test 
     - name: Deploy
     run: |
       git config --global user.name $user_name
