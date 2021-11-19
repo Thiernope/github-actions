@@ -30,7 +30,9 @@ jobs:
       run: npm test -- --coverage
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v1
-      - name: Deploy
+      with:
+       token: ${{ secrets.CODECOV_TOKEN }}
+    - name: Deploy
     run: |
       git config --global user.name $user_name
       git config --global user.email $user_email
