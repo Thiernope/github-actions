@@ -38,4 +38,5 @@ jobs:
         git config --global user.name ${{secrets.USER_NAME}}
         git remote set-url origin https://${{secrets.ACTIONS_DEPLOY_ACCESS_TOKEN}}@github.com/${{secrets.USER_NAME}}/github-actions
 .git
+        
         npm run deploy
