@@ -10,7 +10,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Deployed app
         </a>
       </header>
       <button>Now it's working Kabisa</button>
