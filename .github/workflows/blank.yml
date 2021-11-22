@@ -27,14 +27,14 @@ jobs:
     - run: npm i
     - run: npm build --if-present
       run: npm test 
-    - name: Deploy
-    run: |
-      git config --global user.email ${{ secrests.GITHUB_EMAIL}}
-      git config --global user.name ${{ secrests.GITHUB_USER_NAME}}
-      git remote set-url origin https://${{ACTIONS_DEPLOY_ACCESS_TOKEN}}@github.com/${{ secrests.GITHUB_USER_NAME}}/github-actions
-      npm run deploy
-    # env:
-    #   user_name: 'github-actions[bot]'
-    #   user_email: 'github-actions[bot]@users.noreply.github.com'
-    #   github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
-    #   repository: ${{ github.repository }}
+    # - name: Deploy
+    # run: |
+    #   git config --global user.email ${{ secrests.GITHUB_EMAIL}}
+    #   git config --global user.name ${{ secrests.GITHUB_USER_NAME}}
+    #   git remote set-url origin https://${{ACTIONS_DEPLOY_ACCESS_TOKEN}}@github.com/${{ secrests.GITHUB_USER_NAME}}/github-actions
+    #   npm run deploy
+    # # env:
+    # #   user_name: 'github-actions[bot]'
+    # #   user_email: 'github-actions[bot]@users.noreply.github.com'
+    # #   github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
+    # #   repository: ${{ github.repository }}

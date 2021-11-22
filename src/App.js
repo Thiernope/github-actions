@@ -18,7 +18,7 @@ function App() {
           Learn React
         </a>
       </header>
-      <button>howlaod</button>
+      <button>Kabisa</button>
     </div>
   );
 }
