@@ -13,7 +13,7 @@ function App() {
           Deployed app
         </a>
       </header>
-      <button>Now it's working Kabisa</button>
+      <button>It's perfectly working</button>
     </div>
   );
 }
