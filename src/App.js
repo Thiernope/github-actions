@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -14,7 +13,7 @@ function App() {
           Learn React
         </a>
       </header>
-      <button>Now it's working</button>
+      <button>Now it's working Kabisa</button>
     </div>
   );
 }
