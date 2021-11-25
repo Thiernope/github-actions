@@ -12,8 +12,8 @@ function App() {
         >
           Deployed app
         </a>
+    <button>It's perfectly working!!</button>
       </header>
-      <button>It's perfectly working!!</button>
     </div>
   );
 }
