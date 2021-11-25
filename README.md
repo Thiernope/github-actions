@@ -2,7 +2,7 @@
 
 
 ## Deployed app
-[Deployed app on github pages](https://github.com/facebook/create-react-app).
+[Deployed app on github pages](https://Thiernope.github.io/github-actions).
 
 ## Available Scripts
 
