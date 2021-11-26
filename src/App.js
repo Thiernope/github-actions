@@ -53,7 +53,6 @@ const { REACT_APP_URL_BASE } = process.env;
           <option value="new york">New York</option>
           <option value="kigali">Kigali</option>
           <option value="santiago">Santiago</option>
-          <option value="arserri">Aserrí</option>
           <option value="sanpedro">San Pedro</option>
           <option value="filadelfia">Filadelfia</option>
 
