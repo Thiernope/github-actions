@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+![CI/CD](https://github.com/Thiernope/github-actions/workflows/CI/CD/badge.svg)  [![codecov](https://codecov.io/gh/Thiernope/github-actions/branch/develop/graph/badge.svg)](https://codecov.io/gh/Thiernope/github-actions)  ![License](https://img.shields.io/github/license/Thiernope/github-actions)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Deployed app
+[Deployed app on github pages](https://Thiernope.github.io/github-actions).
 
 ## Available Scripts
 
