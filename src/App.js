@@ -4,9 +4,6 @@ import ClipLoader from "react-spinners/ClipLoader";
 function App() {
 const { REACT_APP_API_KEY } = process.env;
 const { REACT_APP_URL_BASE } = process.env;
-console.log( "//////", REACT_APP_URL_BASE);
-console.log(".....", REACT_APP_API_KEY);
-//const REACT_APP_API_KEY = "37b1ccbfe7e570fe03561d545c9d3bca"
   const [weatherData, setWeatherData] = useState([{}]);
   const [loading, setLoading ] = useState("");
   const [city, setCity ] = useState("Select City");
@@ -15,7 +12,6 @@ console.log(".....", REACT_APP_API_KEY);
 
   const getWeather = (e) => {
     e.preventDefault();
-    console.log(city);
     setLoading(<ClipLoader/>);
       fetch(`${REACT_APP_URL_BASE}/forecast?q=${city}&appid=${REACT_APP_API_KEY}`).then(
         response => response.json()
