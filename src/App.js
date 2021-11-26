@@ -36,7 +36,7 @@ const { REACT_APP_URL_BASE } = process.env;
           target="_blank"
           rel="noopener noreferrer"
         >
-          Deployed app
+          Deployed app.
         </a>
     <button>It's perfectly working!!</button>
       </header>
