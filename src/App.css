@@ -14,6 +14,10 @@
   max-width: 400px;
 }
 
+span{
+  font-weight: bold;
+}
+
 .form{
   background-color: rgb(143, 209, 143);
   width: 50%;

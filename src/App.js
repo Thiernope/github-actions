@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import Arrow from "./components/Arrow"
-import image from "./components/images/background.PNG"
 import './App.css'
 import ClipLoader from "react-spinners/ClipLoader";
 function App() {
@@ -70,16 +68,16 @@ function App() {
       (<div>
         {loading}
         <p className="name">{weatherData.city.name}</p>
-        <p>Population: {weatherData.city.population}</p>
+        <p>Population: <span>{weatherData.city.population}</span></p>
         <div className="div_banner">
         <div className="temp">
-        <p>Max Temp: {weatherData.list[0].main.temp_max}*F</p>
-        <p>Min Temp: {weatherData.list[0].main.temp_min}*F</p>
+        <p>Max Temp: <span>{weatherData.list[0].main.temp_max}*F</span></p>
+        <p>Min Temp: <span>{weatherData.list[0].main.temp_min}*F</span></p>
         </div>
         <div className="lat_lon_time">
-        <p>Time: {weatherData.list[0].dt_txt}</p>
-        <p>lat: {weatherData.city.coord.lat}</p>
-        <p>Long: {weatherData.city.coord.lon}</p>
+        <p>Time: <span>{weatherData.list[0].dt_txt}</span></p>
+        <p>lat: <span>{weatherData.city.coord.lat}</span></p>
+        <p>Long: <span>{weatherData.city.coord.lon}</span></p>
         </div>
         </div>
 
