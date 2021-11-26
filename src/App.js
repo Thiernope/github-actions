@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import './App.css'
 import ClipLoader from "react-spinners/ClipLoader";
 function App() {
-
-  const apiKey = "37b1ccbfe7e570fe03561d545c9d3bca";
+const { REACT_APP_API_KEY } = process.env;
+const { REACT_APP_URL_BASE } = process.env;
+console.log( "//////", REACT_APP_URL_BASE);
+console.log(".....", REACT_APP_API_KEY);
+//const REACT_APP_API_KEY = "37b1ccbfe7e570fe03561d545c9d3bca"
   const [weatherData, setWeatherData] = useState([{}]);
   const [loading, setLoading ] = useState("");
   const [city, setCity ] = useState("Select City");
@@ -14,7 +17,7 @@ function App() {
     e.preventDefault();
     console.log(city);
     setLoading(<ClipLoader/>);
-      fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}`).then(
+      fetch(`${REACT_APP_URL_BASE}/forecast?q=${city}&appid=${REACT_APP_API_KEY}`).then(
         response => response.json()
       ).then(
        data => {
@@ -64,7 +67,7 @@ function App() {
 
     <div className="left">
     {
-      typeof weatherData.city === "undefined" ? (<div><h1 className="title">Welcome, Enter the city and see the weather</h1>{loading}</div>):
+       typeof weatherData.city === "undefined" ? (<div><h1 className="title">Welcome, Enter the city and see the weather</h1>{loading}</div>):
       (<div>
         {loading}
         <p className="name">{weatherData.city.name}</p>
