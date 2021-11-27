@@ -58,7 +58,7 @@ const { REACT_APP_URL_BASE } = process.env;
 
     </select>
 
-    <input className="btn" type="submit" value="--->"/>
+    <input className="btn" type="submit" value="Enter"/>
       </form>
 
     <div className="left">
